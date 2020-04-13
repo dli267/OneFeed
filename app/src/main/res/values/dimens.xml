@@ -1,3 +1,9 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="image_height">160dp</dimen>
+    <dimen name="desc_padding">15dp</dimen>
+    <dimen name="desc">20dp</dimen>
+    <dimen name="info_padding">10dp</dimen>
+    <dimen name="info">15dp</dimen>
 </resources>
