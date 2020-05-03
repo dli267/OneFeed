@@ -46,7 +46,7 @@
         app:key="gen_category"
         app:title="General">
 
-        <EditTextPreferencePreference
+        <EditTextPreference
             app:key="feedback"
             app:summary="Report technical issues or suggest new features"
             app:title="Send feedback"/>
