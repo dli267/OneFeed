@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        app:key="notifications_category"
+        app:title="Notifications">
+
+        <SwitchPreferenceCompat
+            app:key="push_notif"
+            app:title="Push Notifications"/>
+        <ListPreference
+            app:key="muted_notif"
+            app:title="Notification Preferences"
+            android:entries="@array/mutenotifopts"
+            android:entryValues="@array/mutenotifopts"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="filter_category"
+        app:title="Manage Filters">
+
+        <EditTextPreference
+            app:key="mute_users"
+            app:title="Muted Users"/>
+        <EditTextPreference
+            app:key="mute_words"
+            app:title="Muted Words"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="action_category"
+        app:title="Automated Actions">
+
+        <Preference
+            app:key="autopost"
+            app:title="Manage Scheduled Posts"/>
+        <Preference
+            app:key="autoreact"
+            app:title="Manage Feed Reactions"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="gen_category"
+        app:title="General">
+
+        <EditTextPreferencePreference
+            app:key="feedback"
+            app:summary="Report technical issues or suggest new features"
+            app:title="Send feedback"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
