@@ -209,4 +209,14 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
     }
+    /*
+    public void sendOnChannel1 (View v) {
+
+    }
+
+    public void sendOnChannel2 (View v) {
+
+    }
+
+     */
 }
