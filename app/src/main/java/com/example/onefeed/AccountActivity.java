@@ -3,11 +3,15 @@ package com.example.onefeed;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
+import android.widget.Toast;
+
 
 public class AccountActivity extends AppCompatActivity {
 
@@ -22,13 +26,13 @@ public class AccountActivity extends AppCompatActivity {
         // Allows user to set a profile picture by clicking on the current profile pic
         // which is stored as an image button
 
-        /*
+
         imgButton = (ImageButton) findViewById(R.id.profile_pic);
         imgButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent GaleryIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(GaleryIntent, RESULT_LOAD_IMAGE);
+                Intent GalleryIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(GalleryIntent, RESULT_LOAD_IMAGE);
             }
         });
     }
@@ -52,7 +56,7 @@ public class AccountActivity extends AppCompatActivity {
             imgButton.setImageBitmap(BitmapFactory.decodeFile(picturePath));
             Toast.makeText(getApplicationContext(), picturePath, Toast.LENGTH_SHORT).show();
 
-        } */
+        }
 
     }
 
